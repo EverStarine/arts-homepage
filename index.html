@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f6f8">
+  <meta name="description" content="EverStarine 的个人阅读、思考与艺术交流空间。读书分享、随笔、画廊与音乐，在纸间留下回声。">
+  <meta property="og:title" content="EverStarine · 纸间与回声">
+  <meta property="og:description" content="一处安放阅读、思考与艺术的个人空间。">
+  <meta property="og:type" content="website">
+  <title>纸间与回声 · EverStarine</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="content.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳至正文</a>
+  <header class="site-header">
+    <a class="brand" href="#/" aria-label="纸间与回声，回到序页"><span class="brand-mark" aria-hidden="true">✳</span><span>纸间与回声<small>EVERSTARINE / PERSONAL ATELIER</small></span></a>
+    <button class="menu-toggle" aria-controls="navigation" aria-expanded="false">目录 <span aria-hidden="true">＋</span></button>
+    <nav id="navigation" aria-label="主导航">
+      <a href="#/" data-route="home">序页</a><a href="#/reading" data-route="reading">读书</a><a href="#/thoughts" data-route="thoughts">随笔</a><a href="#/gallery" data-route="gallery">画廊</a><a href="#/music" data-route="music">音乐</a><a href="#/exchange" data-route="exchange">交流</a>
+    </nav>
+    <a class="about-link" href="#/about" aria-label="关于本站">关于 <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="main" tabindex="-1"></main>
+  <footer class="site-footer"><div class="footer-name">纸间与回声 <span>© <span id="year"></span> EverStarine</span></div><div>阅读 / 思考 / 艺术</div><div class="reserved">站外入口 <span>暂未开放</span></div></footer>
+  <dialog id="entry-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="关闭详情">×</button><div id="dialog-body"></div></dialog>
+  <div class="notice" id="notice" role="status"></div>
+  <noscript><p class="no-script">请启用 JavaScript，以浏览读书、随笔、画廊、音乐和交流页面。</p></noscript>
+</body>
+</html>
