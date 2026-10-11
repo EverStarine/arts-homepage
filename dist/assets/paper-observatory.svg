@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="850" viewBox="0 0 1000 850" fill="none">
+  <title>纸页、轨迹与回声的原创几何构图</title>
+  <desc>冷白纸页在钴蓝圆面前展开，细线圆轨道与层叠台阶构成轻盈的阅读空间。</desc>
+  <defs>
+    <linearGradient id="paper" x1="425" y1="350" x2="869" y2="690" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset="1" stop-color="#e9edf2"/></linearGradient>
+    <linearGradient id="fold" x1="661" y1="370" x2="689" y2="602" gradientUnits="userSpaceOnUse"><stop stop-color="#eef1f7"/><stop offset="1" stop-color="#fff"/></linearGradient>
+    <linearGradient id="blue" x1="758" y1="255" x2="758" y2="539" gradientUnits="userSpaceOnUse"><stop stop-color="#3154df"/><stop offset="1" stop-color="#5472ec"/></linearGradient>
+    <pattern id="hatch" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(31)"><path d="M0 0V5" stroke="#25324b" stroke-width=".45" opacity=".19"/></pattern>
+    <pattern id="dots" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".55" fill="#25324b" opacity=".18"/></pattern>
+    <filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".76" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".038"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter>
+    <clipPath id="page-left"><path d="m435 463 113-115c53 4 101 26 127 57v174c-50-42-101-66-154-63Z"/></clipPath>
+    <clipPath id="page-right"><path d="m675 405 86-62c27 58 65 98 115 126l-104 99c-39-2-70 2-97 11Z"/></clipPath>
+  </defs>
+
+  <!-- Orbital construction, deliberately left open around the headline. -->
+  <g stroke="#25324b" stroke-width=".7">
+    <path d="M484 164a286 286 0 1 1-104 411" opacity=".18"/>
+    <path d="M885 262a235 235 0 1 1-376-51" opacity=".26"/>
+    <path d="M508 636a254 254 0 0 1-95-234" opacity=".1"/>
+    <path d="M381 433H947M675 97v648" stroke-dasharray="2 7" opacity=".18"/>
+    <path d="m455 210 449 447M476 671 858 211" opacity=".1"/>
+    <path d="M623 147h26m52 0h27M389 423v20m554-20v20M665 719h20" opacity=".36"/>
+    <path d="M858 185v18m-9-9h18M362 571v14m-7-7h14M902 631v18m-9-9h18M527 120v12m-6-6h12" opacity=".6"/>
+  </g>
+  <g fill="#25324b" opacity=".5"><circle cx="423" cy="307" r="2"/><circle cx="784" cy="170" r="2"/><circle cx="923" cy="547" r="2"/><circle cx="558" cy="691" r="2"/></g>
+  <g stroke="#25324b" opacity=".3" stroke-width=".8">
+    <path d="m702 147 2 10m27-6 2 10m27-2 3 10m27 1 4 9m26 5 5 9m25 7 5 8m23 10 6 8m22 13 7 7"/>
+    <path d="m934 390-10 2m13 27-10 1m11 29-10-1m8 31-10-1m4 29-10-2m1 29-10-3m-2 27-9-4"/>
+    <path d="m684 719-1-10m-29 10 1-10m-30 8 1-10m-30 4 3-9m-31 1 4-10"/>
+  </g>
+
+  <!-- A single blue plane anchors the paper architecture. -->
+  <circle cx="756" cy="387" r="139" fill="url(#blue)"/>
+  <path d="M756 244v286M613 387h286" stroke="#fff" stroke-width=".7" opacity=".22"/>
+  <circle cx="756" cy="387" r="119" stroke="#fff" stroke-width=".6" opacity=".18"/>
+
+  <!-- Detached annotation sheets and a quiet musical trace. -->
+  <g stroke="#25324b" stroke-width=".8">
+    <path d="m508 224 96-35 48 68-98 36Z" fill="#f5f7fa" stroke-opacity=".46"/>
+    <path d="m520 226 80-29 36 56-79 29Z" fill="url(#dots)" stroke-opacity=".13"/>
+    <path d="m533 234 35-13m-30 21 44-16m-39 24 27-10" stroke-opacity=".42"/>
+    <path d="m604 189 1 25 47 43" stroke-opacity=".35"/>
+    <path d="m598 326 43-80 54 19-43 81Z" fill="#fff" stroke-opacity=".25"/>
+    <path d="m624 297 29-8m-33 17 30-9m-34 17 29-8" stroke-opacity=".27"/>
+    <path d="M836 577c28 4 56-11 84-46m-84 53c28 4 56-11 84-46m-84 53c28 4 56-11 84-46m-84 53c28 4 56-11 84-46m-84 53c28 4 56-11 84-46" stroke-opacity=".3"/>
+    <path d="m888 569 1-36" stroke-opacity=".6"/><ellipse cx="884" cy="570" rx="5" ry="2.8" transform="rotate(-23 884 570)" fill="#25324b" stroke="none" opacity=".58"/>
+  </g>
+
+  <!-- Terraces, drawn as thin folded paper rather than a solid pedestal. -->
+  <g stroke="#25324b" stroke-width=".75" stroke-linejoin="round">
+    <path d="m443 641 223-71 202 69-225 77Z" fill="#f7f8fa" stroke-opacity=".35"/>
+    <path d="m443 641 200 75v13l-200-74Z" fill="#eef1f5" stroke-opacity=".35"/>
+    <path d="m643 716 225-77v13l-225 77Z" fill="#e4e9f1" stroke-opacity=".35"/>
+    <path d="m475 607 191-61 170 58-193 67Z" fill="#fff" stroke-opacity=".38"/>
+    <path d="m475 607 168 64v16l-168-63Z" fill="#f0f3f7" stroke-opacity=".38"/>
+    <path d="m643 671 193-67v16l-193 67Z" fill="#e6eaf1" stroke-opacity=".38"/>
+    <path d="m509 574 159-49 137 47-162 57Z" fill="#fff" stroke-opacity=".4"/>
+    <path d="m509 574 134 55v17l-134-54Z" fill="#f1f4f8" stroke-opacity=".4"/>
+    <path d="m643 629 162-57v17l-162 57Z" fill="#e8ecf2" stroke-opacity=".4"/>
+    <path d="m666 546-23 125m25-146-25 104m23-59-23 146" stroke-opacity=".11"/>
+    <path d="m527 607 105 40m-72-75 77 31m-142 44 135 50" stroke-opacity=".12"/>
+    <path d="m643 687 123-42" stroke="#3154df" stroke-width="2"/>
+  </g>
+
+  <!-- Open book: curved ruled surfaces, exposed folio edges, and one raised leaf. -->
+  <g stroke="#25324b" stroke-linejoin="round">
+    <path d="m430 472 114-116c56 4 99 23 131 58 27-24 56-46 86-63 28 59 65 100 119 125l-104 103c-40-4-75 1-101 9-49-39-100-63-156-63Z" fill="#dfe5ee" stroke-width=".8" stroke-opacity=".6"/>
+    <path d="m433 468 114-116c54 4 100 25 128 58 27-24 57-46 86-63 27 59 66 100 117 124L774 574c-40-3-73 1-99 9-50-40-101-63-155-63Z" fill="#fff" stroke-width=".65" stroke-opacity=".46"/>
+    <path d="m435 463 113-115c53 4 101 26 127 57v174c-50-42-101-66-154-63Z" fill="url(#paper)" stroke-width="1" stroke-opacity=".62"/>
+    <path d="m675 405 86-62c27 58 65 98 115 126l-104 99c-39-2-70 2-97 11Z" fill="url(#fold)" stroke-width="1" stroke-opacity=".62"/>
+    <path d="M675 405v174" stroke-width="1.1" stroke-opacity=".48"/>
+    <g clip-path="url(#page-left)" stroke-width=".65" opacity=".3">
+      <path d="M472 431c72 3 133 31 190 74m-184-81c69 4 130 31 184 74m-177-82c65 4 126 32 177 74m-170-81c62 4 122 32 170 74m-163-82c60 5 117 32 163 74m-156-81c57 5 111 32 156 74m-149-82c54 6 106 32 149 74m-142-82c52 5 101 32 142 74"/>
+      <path d="M481 462c63 3 126 31 181 74m-167-60c61 6 115 30 167 68m-153-54c56 7 105 29 153 62"/>
+    </g>
+    <g clip-path="url(#page-right)" stroke-width=".65" opacity=".25">
+      <path d="M695 425c32 29 65 46 113 57m-99-67c31 30 63 49 108 59m-94-69c28 30 59 51 102 61m-87-71c25 30 55 53 96 61"/>
+      <path d="M694 479c29 22 58 31 89 35m-88-25c26 19 50 27 78 31m-78-20c22 16 45 23 66 26m-66-16c20 12 36 18 52 20"/>
+    </g>
+    <path d="M675 405c27-61 24-113 9-156l-80 72c27 44 53 102 71 173Z" fill="#fff" stroke-width=".9" stroke-opacity=".55"/>
+    <path d="M675 405c11-57 14-104 9-156-9 58-35 74-80 72 27 44 53 102 71 173Z" fill="url(#hatch)" stroke="none" opacity=".5"/>
+    <path d="M604 321c34 10 61-9 80-72" stroke-width=".6" stroke-opacity=".27"/>
+    <path d="M635 325c18 33 30 64 40 99m-30-108c13 25 23 51 31 78m-23-87c11 19 17 38 22 58" stroke-width=".65" stroke-opacity=".2"/>
+    <path d="m686 548 29-9 2 70-15-11-17 18Z" fill="#3154df" stroke="none"/>
+    <path d="m692 550-2 53" stroke="#fff" stroke-width=".7" opacity=".43"/>
+  </g>
+
+  <!-- Marginal measuring marks and loose graphite details. -->
+  <g stroke="#25324b" stroke-width=".7" opacity=".4">
+    <path d="M443 741h425m-425-4v8m425-8v8M900 351v119m-4-119h8m-8 119h8"/>
+    <path d="m436 627-35 12m47-74-51 16m169-372-18-25M795 234l17-17"/>
+    <path d="M424 668h-20v-20M825 739v19h-20"/>
+  </g>
+  <g fill="#3154df"><path d="m895 243 2.5 7.5 7.5 2.5-7.5 2.5-2.5 7.5-2.5-7.5-7.5-2.5 7.5-2.5Z"/><circle cx="444" cy="363" r="3"/><path d="M784 744h28v3h-28Z"/></g>
+  <path d="M348 604h40m-20-20v40" stroke="#25324b" stroke-width=".7" opacity=".18"/>
+  <rect x="335" y="100" width="620" height="670" filter="url(#grain)" opacity=".24"/>
+</svg>
